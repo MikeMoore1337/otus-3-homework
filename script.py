@@ -20,7 +20,6 @@ with open("users.json", "r") as json_file:
 with open("books.csv", "r") as csv_file:
     books = csv.DictReader(csv_file)
     i = 0
-
     for book in books:
         data[i % len(data)]["books"].append(
             {
